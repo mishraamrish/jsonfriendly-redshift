@@ -2,7 +2,7 @@
 
 # distutils/setuptools install script for jsonfriendly_redshift
 import os
-from setuptools import setup
+from setuptools import setup, find_packages
 
 # Package info
 NAME = 'jsonfriendly_redshift'
@@ -29,6 +29,7 @@ setup(
     url='https://github.com/mishraamrish/jsonfriendly_redshift',
     install_requires=requirements,
     license='MIT License',
+    packages=find_packages(),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
